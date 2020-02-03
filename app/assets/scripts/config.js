@@ -29,7 +29,7 @@ if (process.env.DS_ENV !== 'staging' && process.env.DS_ENV !== 'production') {
   config = defaultsDeep(configurations.local || {}, config)
 }
 
-config.default.mbtoken = process.env.MB_TOKEN || config.default.mbtoken
+config.default.mbtoken = 'pk.eyJ1Ijoic3VtYW50aDAyNjIiLCJhIjoiY2s1cjJkMDl4MDd6YjNvcDI4M3pmbnVhYiJ9.gAcdqpNytJane95lwv5dbQ'
 config.default.gaTrackingID = process.env.GA_TRACKING_ID || config.default.gaTrackingID
 config.default.mailchimpUrl = process.env.MAILCHIMP_URL || config.default.mailchimpUrl
 
